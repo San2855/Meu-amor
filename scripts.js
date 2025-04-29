@@ -38,27 +38,47 @@
         window.addEventListener('scroll', animateOnScroll);
         animateOnScroll(); // Run once on page load
 
-        // Love counter
         function updateLoveCounter() {
             const startDate = new Date('2022-04-30T00:00:00');
             const now = new Date();
-            
-            const diff = now - startDate;
-            
-            const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
-            const months = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24 * 30));
-            const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 30)) / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            
+        
+            let years = now.getFullYear() - startDate.getFullYear();
+            let months = now.getMonth() - startDate.getMonth();
+            let days = now.getDate() - startDate.getDate();
+            let hours = now.getHours() - startDate.getHours();
+        
+            // Ajustes para casos onde o mês ou o dia ainda não foi completado
+            if (days < 0) {
+                months -= 1;
+                const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                days += prevMonth.getDate();
+            }
+        
+            if (months < 0) {
+                years -= 1;
+                months += 12;
+            }
+        
+            if (hours < 0) {
+                hours += 24;
+                days -= 1;
+                if (days < 0) {
+                    months -= 1;
+                    const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+                    days += prevMonth.getDate();
+                }
+            }
+        
             document.getElementById('years').textContent = years;
             document.getElementById('months').textContent = months;
             document.getElementById('days').textContent = days;
             document.getElementById('hours').textContent = hours;
         }
         
-        // Update counter immediately and then every hour
+        // Atualiza imediatamente e depois a cada hora
         updateLoveCounter();
         setInterval(updateLoveCounter, 1000 * 60 * 60);
+        
         
         // Music player functionality (simulated)
         const playButton = document.querySelector('.fa-play').parentElement;

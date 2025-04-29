@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Amor | Para Minha Namorada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-pink-50">
+    <!-- Header -->
+    <header class="bg-pink-700 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-heart text-2xl mr-2 text-pink-300 heart-beat"></i>
+                <span class="text-xl font-bold">Nosso Amor</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="hover:text-pink-300 font-medium">Início</a>
+                <a href="#counter" class="hover:text-pink-300 font-medium">Nosso Tempo</a>
+                <a href="#gallery" class="hover:text-pink-300 font-medium">Nossas Fotos</a>
+                <a href="#letter" class="hover:text-pink-300 font-medium">Carta de Amor</a>
+            </nav>
+            
+            <button class="md:hidden p-2 text-white" id="mobile-menu-button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden bg-pink-600 py-2 px-4 shadow-md" id="mobile-menu">
+            <a href="#home" class="block py-2 hover:text-pink-300">Início</a>
+            <a href="#counter" class="block py-2 hover:text-pink-300">Nosso Tempo</a>
+            <a href="#gallery" class="block py-2 hover:text-pink-300">Nossas Fotos</a>
+            <a href="#letter" class="block py-2 hover:text-pink-300">Carta de Amor</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-white flex items-center justify-center" id="home">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 fade-in">Para Você, Meu Amor</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto fade-in" style="transition-delay: 0.2s;">Cada dia ao seu lado é um presente que eu guardo no coração</p>
+            <div class="fade-in" style="transition-delay: 0.4s;">
+                <i class="fas fa-heart text-4xl text-pink-300 heart-beat"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Counter Section -->
+    <section class="py-16 bg-white" id="counter">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-12 text-pink-700">Nosso Tempo Juntos</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="bg-pink-100 rounded-xl p-6 shadow-md">
+                    <div class="text-4xl md:text-5xl font-bold text-pink-700" id="years">0</div>
+                    <div class="text-pink-600 mt-2">Anos</div>
+                </div>
+                <div class="bg-pink-100 rounded-xl p-6 shadow-md">
+                    <div class="text-4xl md:text-5xl font-bold text-pink-700" id="months">0</div>
+                    <div class="text-pink-600 mt-2">Meses</div>
+                </div>
+                <div class="bg-pink-100 rounded-xl p-6 shadow-md">
+                    <div class="text-4xl md:text-5xl font-bold text-pink-700" id="days">0</div>
+                    <div class="text-pink-600 mt-2">Dias</div>
+                </div>
+                <div class="bg-pink-100 rounded-xl p-6 shadow-md">
+                    <div class="text-4xl md:text-5xl font-bold text-pink-700" id="hours">0</div>
+                    <div class="text-pink-600 mt-2">Horas</div>
+                </div>
+            </div>
+            
+            <div class="mt-12 max-w-2xl mx-auto bg-pink-50 rounded-xl p-6 shadow-sm">
+                <p class="text-pink-700 italic">"Começamos nossa história no dia 30/04/2022 e desde então cada momento tem sido especial."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-16 bg-pink-50" id="gallery">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-pink-700">Nossos Momentos</h2>
+            
+            <div class="photo-gallery">
+                <!-- Substitua essas imagens pelas suas fotos -->
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250408-WA0003.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\Imagem do WhatsApp de 2025-04-28 à(s) 22.37.02_a6bbf147.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\Imagem do WhatsApp de 2025-04-28 à(s) 22.37.02_9d822be8.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0005.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0006.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\Imagem do WhatsApp de 2025-04-28 à(s) 22.37.02_9570d429.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0008.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0009.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0010.jpg" alt="Nós dois">
+                </div>
+                <div class="photo-item h-64">
+                    <img src="photos\IMG-20250428-WA0011.jpg" alt="Nós dois">
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-pink-700">Cada foto é uma memória que guardo com carinho no meu coração</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love Letter Section -->
+    <section class="love-letter py-16 text-white" id="letter">
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 shadow-lg">
+                <h2 class="text-3xl font-bold mb-6 text-center">Para Você, Meu Amor</h2>
+                
+                <div class="space-y-4 text-lg">
+                    <p>Querida,</p>
+                    
+                    <p>Desde o dia 30 de abril de 2022, minha vida ganhou cores mais vibrantes, risadas mais doces e um amor que eu nem sabia que era capaz de sentir.</p>
+                    
+                    <p>Cada dia ao seu lado é uma bênção que agradeço ao universo. Seu sorriso ilumina meus dias mais cinzentos, seu abraço é meu porto seguro, e seu amor é o maior presente que já recebi.</p>
+                    
+                    <p>Lembro de cada momento que passamos juntos como se fosse ontem - nossos primeiros encontros, nossos passeios, nossas conversas até tarde, cada "eu te amo" trocado. São essas memórias que aquecem meu coração nos dias em que estamos distantes.</p>
+                    
+                    <p>Você é a pessoa que me faz querer ser melhor a cada dia. Sua bondade, inteligência, força e beleza (tanto por dentro quanto por fora) me inspiram constantemente.</p>
+                    
+                    <p>Este site é apenas uma pequena demonstração de tudo que sinto por você. Queria poder colocar em palavras toda a magnitude do meu amor, mas sei que seria impossível - ele cresce a cada dia que passa.</p>
+                    
+                    <p>Obrigado por ser você. Obrigado por me amar. Obrigado por fazer parte da minha vida.</p>
+                    
+                    <p>Prometo continuar te amando, cuidando de você e fazendo você sorrir todos os dias da nossa vida.</p>
+                    
+                    <p class="text-right">Com todo meu amor,</p>
+                    <p class="text-right font-bold text-xl">Santiago</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex flex-col items-center">
+                <div class="flex items-center mb-4">
+                    <i class="fas fa-heart text-2xl mr-2 text-pink-300 heart-beat"></i>
+                    <span class="text-xl font-bold">Para Sempre</span>
+                </div>
+                
+                <p class="text-pink-300">Feito com amor por Santiago</p>
+                <p class="text-pink-300 text-sm mt-1">© 2025 - Todos os direitos reservados ao seu coração</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
